@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crear Plato de Comida</title>
+    <link rel="stylesheet" href="../css/estiloplato.css">
+
+    <link rel="stylesheet" href="../css/estiloplato.css">
+    <link rel="stylesheet" href="../css/barra.css" />
+
+
+    <header>
+        <div class="container">
+            <h2 class="logo">Restaurant ITSA</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="Pedir.html">Crear Pedido</a></li>
+                    <li><a href="adminPedido.html">Admin Pedido</a></li>
+                    <li><a href="#" onclick="contact();">Contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+
+
+
+            <table>
+                <tr>
+                    <td>
+                        <form onsubmit="event.preventDefault(); onFormsubmit();" autocomplete="off">
+                            <div>
+
+                                <label># ID</label> <label class="validation-error hide" id="fullNameValidationError">Campos Requeridos.</label>
+                                <input type="number" name="id" id="id" required="required">
+                            </div>
+                            <div>
+
+                                <label>Nombre</label>
+                                <input type="text" name="nombre" id="nombre" required="required">
+
+                            </div>
+                            <div>
+                                <label>Precio</label>
+                                <input type="number" name="precio" id="precio" required="required">
+                            </div>
+                            <div>
+                                <label>Descripcion</label>
+                                <input type="text" name="desc" id="desc" required="required">
+                            </div>
+                            <div class="form-action-buttons">
+                                <input type="submit" value="enviar">
+                            </div>
+                        </form>
+                    </td>
+                    <td>
+
+                        <table class="list" id="listaPlatos">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th> Nombre </th>
+                                    <th> Precio </th>
+                                    <th> Descripcion </th>
+                                    <th> Accion </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+
+
+
+
+            <script src="../js/plato.js"></script>
+            <script src="../js/contactanos.js"></script>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

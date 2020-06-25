@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="" width=, initial-scale=1.0>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/barra.css" />
+
+
+    <header>
+        <div class="container">
+            <h2 class="logo">Restaurant ITSA</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="html/crearPlato.html">Crear Plato</a></li>
+                    <li><a href="html/Pedir.html">Crear Pedido</a></li>
+                    <li><a href="html/adminPedido.html">Admin Pedido</a></li>
+                    <li><a href="#" onclick="contact();">Contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</head>
+
+<body>
+
+    <div class="panel text-center">
+        <div class="form">
+            <div class="col"><input type="text" class="form-control txtuser" placeholder="Usuario" /></div>
+            <div class="col py-4"><input type="password" class="form-control txtpass" placeholder="Contraseña" /></div>
+
+            <button class="btn btn-success submit px-4"> Iniciar Sesion </button>
+            <p class="message pt-4 txt-danger" style="color:#55d6aa"></p>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+    <script src="js/contactanos.js"></script>
+
+
+</body>
+
+</html>
